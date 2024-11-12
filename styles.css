@@ -1,0 +1,146 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url("imagen-flor/imagen-flor/florrrr.jpg");
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.planta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  justify-content: flex-end;
+}
+.flor {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+}
+.centro {
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  z-index: 1;
+}
+.petalo {
+  width: 40px;
+  height: 60px;
+  background-color: #f06292;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  transform-origin: 20px 50px;
+}
+#petalo1 {
+  transform: rotate(0deg) translateY(-30px);
+}
+#petalo2 {
+  transform: rotate(60deg) translateY(-30px);
+}
+#petalo3 {
+  transform: rotate(120deg) translateY(-30px);
+}
+#petalo4 {
+  transform: rotate(180deg) translateY(-30px);
+}
+#petalo5 {
+  transform: rotate(240deg) translateY(-30px);
+}
+#petalo6 {
+  transform: rotate(300deg) translateY(-30px);
+}
+.tallo {
+  width: 10px;
+  height: 150px;
+  background-color: #4caf50;
+  position: relative;
+  top: -10px;
+}
+.hoja {
+  width: 40px;
+  height: 20px;
+  background-color: #4caf50;
+  border-radius: 50% 50% 0 0;
+  position: absolute;
+}
+
+#hoja1 {
+  transform: rotate(-35deg);
+  top: 50px;
+  left: -2px;
+}
+
+#hoja2 {
+  transform: rotate(35deg);
+  top: 74px;
+  right: -2px;
+}
+body,
+html {
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  background-color: #f0f8ff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+h1 {
+  font-size: 3em;
+  color: #f13c78;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.bienvenida {
+  font-size: 1.5em;
+  color: #d81515;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+button {
+  font-size: 1.2em;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+button:focus {
+  outline: none;
+}
+
+button:active {
+  background-color: #388e3c;
+  transform: scale(0.98);
+}

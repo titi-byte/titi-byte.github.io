@@ -1,0 +1,363 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url("imagen-flor/imagen-flor/florrrr.jpg");
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+h1 {
+  color: rgb(230, 43, 43);
+  font-size: 2em;
+  text-align: left;
+  text-shadow: 2px 2px 5px black;
+  margin-top: 20px; /* Ajusté para que esté más arriba */
+  margin-left: 20px;
+  position: absolute;
+  z-index: 3;
+}
+.planta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  justify-content: flex-end;
+  margin-top: 150px;
+}
+.flor {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+}
+.centro {
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  z-index: 1;
+}
+.petalo {
+  width: 40px;
+  height: 60px;
+  background-color: #f06292;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  transform-origin: 20px 50px;
+}
+#petalo1 {
+  transform: rotate(0deg) translateY(-30px);
+}
+#petalo2 {
+  transform: rotate(60deg) translateY(-30px);
+}
+#petalo3 {
+  transform: rotate(120deg) translateY(-30px);
+}
+#petalo4 {
+  transform: rotate(180deg) translateY(-30px);
+}
+#petalo5 {
+  transform: rotate(240deg) translateY(-30px);
+}
+#petalo6 {
+  transform: rotate(300deg) translateY(-30px);
+}
+.tallo {
+  width: 10px;
+  height: 150px;
+  background-color: #4caf50;
+  position: relative;
+  top: -10px;
+  z-index: 1;
+}
+.hoja {
+  width: 40px;
+  height: 20px;
+  background-color: #4caf50;
+  border-radius: 50% 50% 0 0;
+  position: absolute;
+}
+
+#hoja1 {
+  transform: rotate(-35deg);
+  top: 50px;
+  left: -2px;
+}
+
+#hoja2 {
+  transform: rotate(35deg);
+  top: 74px;
+  right: -2px;
+}
+h1 {
+  color: rgb(230, 43, 43);
+  font-size: 2em;
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
+  margin-top: -220px;
+}
+h1 {
+  position: relative 200px;
+  margin-left: 201px;
+}
+@keyframes moverNubes {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.contenedor {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+.planta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.flor {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+}
+
+.petalo {
+  width: 40px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  transform-origin: 20px 50px;
+}
+
+.flor.color-rosa #petalo1 {
+  background-color: #f06292;
+  transform: rotate(0deg) translateY(-30px);
+}
+.flor.color-amarilla #petalo1 {
+  background-color: #ffeb3b;
+  transform: rotate(0deg) translateY(-30px);
+}
+.flor.color-azul #petalo1 {
+  background-color: #2196f3;
+  transform: rotate(0deg) translateY(-30px);
+}
+
+.flor.color-rosa #petalo2 {
+  background-color: #f06292;
+  transform: rotate(60deg) translateY(-30px);
+}
+.flor.color-amarilla #petalo2 {
+  background-color: #ffeb3b;
+  transform: rotate(60deg) translateY(-30px);
+}
+.flor.color-azul #petalo2 {
+  background-color: #2196f3;
+  transform: rotate(60deg) translateY(-30px);
+}
+
+.flor.color-rosa #petalo3 {
+  background-color: #f06292;
+  transform: rotate(120deg) translateY(-30px);
+}
+.flor.color-amarilla #petalo3 {
+  background-color: #ffeb3b;
+  transform: rotate(120deg) translateY(-30px);
+}
+.flor.color-azul #petalo3 {
+  background-color: #2196f3;
+  transform: rotate(120deg) translateY(-30px);
+}
+
+.flor.color-rosa #petalo4 {
+  background-color: #f06292;
+  transform: rotate(180deg) translateY(-30px);
+}
+.flor.color-amarilla #petalo4 {
+  background-color: #ffeb3b;
+  transform: rotate(180deg) translateY(-30px);
+}
+.flor.color-azul #petalo4 {
+  background-color: #2196f3;
+  transform: rotate(180deg) translateY(-30px);
+}
+
+.flor.color-rosa #petalo5 {
+  background-color: #f06292;
+  transform: rotate(240deg) translateY(-30px);
+}
+.flor.color-amarilla #petalo5 {
+  background-color: #ffeb3b;
+  transform: rotate(240deg) translateY(-30px);
+}
+.flor.color-azul #petalo5 {
+  background-color: #2196f3;
+  transform: rotate(240deg) translateY(-30px);
+}
+
+.flor.color-rosa #petalo6 {
+  background-color: #f06292;
+  transform: rotate(300deg) translateY(-30px);
+}
+.flor.color-amarilla #petalo6 {
+  background-color: #ffeb3b;
+  transform: rotate(300deg) translateY(-30px);
+}
+.flor.color-azul #petalo6 {
+  background-color: #2196f3;
+  transform: rotate(300deg) translateY(-30px);
+}
+
+.centro {
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  z-index: 1;
+}
+.tallo {
+  width: 10px;
+  height: 150px;
+  background-color: #4caf50;
+  position: relative;
+  z-index: 1;
+}
+@keyframes moverFlores {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.planta {
+  animation: moverFlores 2s ease-in-out infinite;
+}
+.nubes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 1;
+}
+
+/* Estilo para cada nube individual */
+.nube {
+  width: 600px;
+  height: 150px;
+  background: #278acc;
+  border-radius: 50%;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+  position: absolute;
+  filter: blur(8px);
+  animation: moverNubes 21s linear infinite;
+}
+@keyframes moverNubes {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.nube:nth-child(2) {
+  width: 700px;
+  height: 170px;
+  opacity: 0.75;
+  animation-duration: 20s;
+}
+.nube:nth-child(3) {
+  width: 500px;
+  height: 130px;
+  opacity: 0.75;
+  animation-duration: 19s;
+}
+.nubes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 1;
+}
+.mensaje {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Esto centra el div en el medio de la pantalla */
+  z-index: 2;
+}
+
+.texto-nube {
+  font-size: 4em; /* Tamaño grande del texto */
+  color: rgb(235, 9, 9); /* Color de la letra */
+  text-align: center; /* Centra el texto */
+  font-weight: bold; /* Hace la letra más gruesa */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10; /* Asegura que el texto esté encima de otros elementos */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para el texto */
+  animation: ondear 3s ease-in-out infinite; /* Aplica la animación */
+}
+
+/* Animación de ondeo para simular el movimiento de la bandera */
+@keyframes ondear {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg); /* Estado inicial */
+  }
+  25% {
+    transform: translate(-50%, -50%) rotate(5deg); /* Movimiento hacia la derecha */
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(0deg); /* Regresa al centro */
+  }
+  75% {
+    transform: translate(-50%, -50%) rotate(-5deg); /* Movimiento hacia la izquierda */
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg); /* Regresa al centro */
+  }
+}
